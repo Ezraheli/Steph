@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./Assets/img/favicons/stephanie logo.png" type="image/x-icon">
+    <title>Stephanie Losabia | Official Website</title>
+
+    <!-- todo Bootstrap 5.3 CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- todo CSS links -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    
+</head>
+<body>
+
+    <!-- todo Navigational Bar Section -->
+
+    <nav class="navbar navbar-dark navbar-expand-lg fixed-top" id="header-nav">
+        <div class="container">
+          <a class="navbar-brand" href="#home-section">
+            <img src="./Assets/img/favicons/stephanie logo.png" alt="" width="100">
+          </a>
+          <button class="navbar-toggler border-0 custom-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="sidebar offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header border-bottom">
+              <a class="navbar-brand" href="#home-section">
+                <img src="./Assets/img/logo/stephanie logo.png" alt="" width="100">
+              </a>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+
+            <!-- * Canvas Body -->
+            <div class="offcanvas-body d-flex flex-column flex-lg-row p-4 p-lg-0 justify-content-end" id="ul-nav">
+
+              <div class="d-flex justify-content-center flex-column flex-lg-row align-items-center gap-3 ">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item mx-3">
+                      <a class="nav-link" href="#about-me-section">About Me</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                      <a class="nav-link" href="#project-section">Projects</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                      <a class="nav-link" href="#contact-section">Contact</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link" href="#gallery-masonry">Gallery</a>
+                      </li>
+                  </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+
+      <!-- todo Homepage Section -->
+       <section id="home-section">
+            <div class="container-lg">
+                <div class="row justify-content-around align-items-center">
+                    <div class="col-lg-4 col-md-12 order-1 order-lg-2">
+                        <img src="./Assets/img/StephanieRawImg.png" alt="">
+                    </div>
+                    <div class="col-lg-4 col-md-12 order-2 order-lg-1">
+                        <h1>HI! I AM <span>STEPHANIE</span></h1>
+                        <h3>An IT Student at Davao del Norte State College</h3>
+                        <div class="button-group">
+                          <button class="btn" id="contact-btn">
+                            Contact Me
+                          </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+       </section>
+
+       <!-- todo Separator -->
+       <section id="separator">
+            <div></div>
+       </section>
+
+       <!-- todo About Me Section -->
+       <section id="about-me-section" class="py-5">
+            <div class="container-lg">
+                <div class="row justify-content-around align-items-center">
+                    <div class="col-lg-4 col-md-12">
+                        <div class="img-group">
+                          <img src="./Assets/img/Rawimg.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12">
+                        <h1>Who Am I?</h1>
+                        <p>Hi! I am Stephanie Kate Losabia,
+                          Art enthusiast, strange and simple. A student of Davao Del Norte State College from the Institute of Computing, Bachelor of Science in Information Technology.
+                        </p>
+
+                        <!-- Accordion -->
+                        <div class="accordion custom-accordion" id="accordionExample">
+                          <div class="accordion-item">
+                            <h2 class="accordion-header">
+                              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Educational Background
+                              </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                              <div class="accordion-body">
+                                <ul>
+                                  <li><span>Junior High School : </span> North Davao College</li>
+                                  <li><span>Senior High School : </span> Panabo National High School</li>
+                                  <li><span>College : </span> Davao Del Norte State College</li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="accordion-item">
+                            <h2 class="accordion-header">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                  What are my interests and hobbies?
+                              </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                              <div class="accordion-body">
+                                <ul>
+                                  <li>Graphics UI</li>
+                                  <li>Canvas Painting</li>
+                                  <li>Music & Arts Related</li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                          
+                        </div>                
+
+                    </div> 
+                    <div class="skills-tab col-lg-12 col-md-12">
+                        <h1 class="text-center">Skills</h1>
+                        <div class="container-md">
+                          <div class="row justify-content-center align-items-center">
+                            <div class="skills-col col-lg-4 col-md-4 col-sm-4 text-center" >
+                              <img src="./Assets/img/icons/paint-brush-64.png" alt="" id="skills-img">
+                              <h4>Visual Artist</h4>
+                            </div>
+                            <div class="skills-col col-lg-4 col-md-4 col-sm-4 text-center">
+                              <img src="./Assets/img/icons/music.png" alt="" id="skills-img">
+                              <h4>Keyboardist</h4>
+                            </div>
+                            <div class="skills-col col-lg-4 col-md-4 col-sm-4 text-center">
+                              <img src="./Assets/img/icons/music-conduktor-64.png" alt="" id="skills-img">
+                              <h4>Music Director</h4>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                        
+                    </div>
+                </div>
+            </div>
+       </section>
+
+
+
+
+       <!-- todo Project Sections -->
+        <section id="project-section">
+          <div class="container-fluid">
+            <div class="row justify-content-center align-items-center">
+              <h1>My Works</h1>
+              <div class="line">
+                
+              </div>
+          </div>
+          </div>
+          <div class="row justify-content-center align-items-center w-100 mx-auto">
+            <div class="col-12 col-sm-6 col-md-6 col-lg-6 d-flex justify-content-center">
+              <div class="project-container">
+                <img src="./Assets/img/projects/GoogleSite.png" alt="">
+                <button id="overlaybtn" type="button">
+                  <a href="https://drive.google.com/drive/u/1/folders/1-3lt2NOWjrugiQ537qo1SQkEKQNoqhBC" target="_blank">
+                    Show Details
+                  </a>
+                </button>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-6 col-lg-6 d-flex justify-content-center">
+              <div class="project-container">
+                <img src="./Assets/img/projects/JAS.png" alt="">
+                <button id="overlaybtn" type="button">
+                  <a href="https://drive.google.com/drive/folders/1gTdrBmHl9maNIia1JQzHaSbM9cudzatl" target="_blank">
+                    Show Details
+                  </a>
+                </button>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-6 col-lg-6 d-flex justify-content-center">
+              <div class="project-container">
+                <img src="./Assets/img/projects/nochebuena.png" alt="">
+                <button id="overlaybtn" type="button">
+                  <a href="https://drive.google.com/file/d/10OyZl8df06G7ogRNRpMCs4bCGM-n0afl/view" target="_blank">
+                    Show Details
+                  </a>
+                </button>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-6 col-lg-6 d-flex justify-content-center">
+              <div class="project-container">
+                <img src="./Assets/img/projects/BloodDrive.png" alt="">
+                <button id="overlaybtn" type="button">
+                  <a href="https://www.youtube.com/watch?v=HDKlyf5FjGQ" target="_blank">
+                    Show Details
+                  </a>
+                </button>
+              </div>
+            </div>
+            <!--! More Projects... -->
+           
+            <div class="hidden-project">
+              <div class="row justify-content-center align-items-center w-100 mx-auto">
+                <div class="col-12 col-sm-6 col-md-6 col-lg-6 d-flex justify-content-center">
+                  <div class="project-container">
+                    <img src="./Assets/img/projects/BloodDrivetrailer.png" alt="">
+                    <button id="overlaybtn" type="button">
+                      <a href="https://www.youtube.com/watch?v=GCo-YLZleEU" target="_blank">
+                        Show Details
+                      </a>
+                    </button>
+                  </div>
+                </div>
+  
+                <div class="col-12 col-sm-6 col-md-6 col-lg-6 d-flex justify-content-center">
+                  <div class="project-container">
+                    <img src="./Assets/img/projects/MarketPulse.png" alt="">
+                    <button id="overlaybtn" type="button">
+                      <a href="https://drive.google.com/file/d/1c9xqykFBKfVGE5cAkstDFZZGkSiHnivb/view?usp=sharing" target="_blank">
+                        Show Details
+                      </a>
+                    </button>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-6 d-flex justify-content-center">
+                  <div class="project-container">
+                    <img src="./Assets/img/projects/AbbysFloral.png" alt="">
+                    <button id="overlaybtn" type="button">
+                      <a href="https://drive.google.com/drive/u/1/folders/1XOuuOt0O961_Lr6OsEzvASfhIQaPLTSS" target="_blank">
+                        Show Details
+                      </a>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <!--! Show More Button below -->
+            <button class="btn" id="showmore" onclick="showMore()">
+              Show More
+            </button>
+          </div>
+        </section>
+
+
+        <!-- todo Contact Section -->
+         <section id="contact-section">
+            <div class="container-lg">
+              <div class="row justify-content-center align-items-center">
+                <div class="col-12 col-sm-12 text-center">
+                  <h4>Contact Me</h4>
+                </div>
+                <div class="col-12 col-sm-12 text-center">
+                  <h1>Get in Touch</h1>
+                </div>
+                <div class="col-12 col-sm-12 text-center">
+                  <p>losabia.stephaniekate@dnsc.edu.ph</p>
+                  <p>+639090774336</p>
+                </div>
+                <div class="col-12 col-sm-6 col-md-12 col-lg-12 text-center">
+                  <div class="social-media">
+
+                    <!-- Add your Social Media Link -->
+
+                    <a href="https://www.facebook.com/profile.php?id=100081480126236&mibextid=ZbWKwL">
+                      <i class="bi bi-facebook">
+                      </i>
+                    </a>
+                    <a href="https://www.instagram.com/ur_steffania?igsh=dWVyY2l5dm55M2du">
+                      <i class="bi bi-instagram">
+                      </i>
+                    </a>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </section>
+
+          <!-- todo Masonry Section Gallery -->
+           <section id="gallery-masonry">
+            <h1>IT111 Gallery Pictures</h1>
+            <p>Take a look on some of our memorable captures during a memorable endeavor.</p>
+            <div class="container-lg">
+              <div class="masonry">
+                <div class="item item1" data-image="../Assets/img/gallery/DSC00088.JPG"></div>
+                <div class="item item2" data-image="../Assets/img/gallery/Cover 1.jpg"></div>
+                <div class="item item3" data-image="../Assets/img/gallery/DSC00007.JPG"></div>
+                <div class="item item4" data-image="../Assets/img/gallery/Duran 2.jpg"></div>
+                <div class="item item5" data-image="../Assets/img/gallery/DSC00236.JPG"></div>
+                <div class="item item6" data-image="../Assets\img\gallery\11 Fill the Frame .jpg"></div>
+                <div class="item item7" data-image="../Assets/img/gallery/24.jpg"></div>
+                <div class="item item8" data-image="../Assets/img/gallery/5 Centered Composition .jpg"></div>
+                <div class="item item9" data-image="../Assets/img/gallery/18 Rule of Thirds.jpg"></div>
+                <div class="item item10" data-image="../Assets/img/gallery/Rodriguez 1.jpg"></div>
+                <div class="item item11" data-image="../Assets/img/gallery/Jalique 1.jpg"></div>
+                <div class="item item12" data-image="../Assets/img/gallery/received_882469159896793.jpg"></div>
+            </div>
+            </div>
+           </section>
+
+           <!-- ! This is a Modal Pop-up Section, not an official section of the website -->
+          <!-- Modal template -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content bg-dark">
+                <div class="modal-header text-light">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">
+                    IT111 Gallery
+                  </h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <img src="" alt="Image">
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-success" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+          <!-- todo Footer Section -->
+           <footer class="footer-section">
+            <div class="container-lg">
+              <div class="row justify-content-center align-items-center">
+                <div class="social-media-footer">
+
+                  <!-- Add your Social Media Link -->
+
+                  <a href="https://www.facebook.com/profile.php?id=100081480126236&mibextid=ZbWKwL">
+                    <i class="bi bi-facebook">
+                    </i>
+                  </a>
+                  <a href="https://www.instagram.com/ur_steffania?igsh=dWVyY2l5dm55M2du">
+                    <i class="bi bi-instagram">
+                    </i>
+                  </a>
+                </div>
+
+                <div class="link-group">
+                  <ul>
+                    <li class="d-inline"><a href="#about-me-section">About Me</a></li>
+                    <li class="d-inline"><a href="#project-section">Projects</a></li>
+                    <li class="d-inline"><a href="#contact-section">Contact</a></li>
+                    <li class="d-inline"><a href="#gallery-masonry">Gallery</a></li>
+                  </ul>
+                </div>
+
+                <div class="copyright">
+                  <p>
+                    Copyright © 2024 All Rights Reserved by 
+                  </p>
+                </div>
+              </div>
+            </div>
+           </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@floating-ui/core@1.6.4"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@floating-ui/dom@1.6.7"></script>       
+    <!-- todo Bootstrap 5.3 CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <!-- todo JavaScript Link -->
+     <script src="./js/app.js"></script>
+</body>
+</html>
